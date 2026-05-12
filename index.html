@@ -9,25 +9,23 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            /* 深灰色磨砂质感背景 */
-            background-color: #2c2c2c;
-            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 0px);
-            background-size: 20px 20px;
+            /* 温暖质感的深石色磨砂背景 */
+            background-color: #524c46; 
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E");
         }
         .transition-all { transition: all 0.3s ease; }
         .leading-relaxed-tight { line-height: 1.6; }
-        /* 自定义滚动条，使其与深灰色背景融合 */
+        /* 自定义滚动条，适配温暖色调 */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #1a1a1a; }
-        ::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        ::-webkit-scrollbar-track { background: #3d3834; }
+        ::-webkit-scrollbar-thumb { background: #6b635d; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #827871; }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen py-6 px-4 sm:px-6 lg:px-8">
 
     <!-- 主容器 -->
-    <!-- 增加了更深、更柔和的投影，配合背景让白卡片产生悬浮感 -->
-    <main class="max-w-5xl mx-auto bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden">
+    <main class="max-w-5xl mx-auto bg-white rounded-2xl shadow-[0_40px_70px_-15px_rgba(0,0,0,0.5)] overflow-hidden">
         
         <!-- 头部 Banner -->
         <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 sm:p-10 relative overflow-hidden">
@@ -42,7 +40,7 @@
                     <a href="tel:18679623617" class="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full transition text-sm border border-white/20">
                         <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> 18679623617
                     </a>
-                    <a href="123.pdf" download="姜添允_简历.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 bg-indigo-500 hover:bg-indigo-600 px-5 py-1.5 rounded-full transition text-sm border border-indigo-400 font-bold shadow-lg ml-1">
+                    <a href="123.pdf" download="姜添允_简历.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 bg-indigo-500 hover:bg-indigo-600 px-4 py-1.5 rounded-full transition text-sm border border-indigo-400 font-bold shadow-lg ml-1">
                         <i data-lucide="file-down" class="w-4 h-4 text-white"></i> 简历下载
                     </a>
                 </div>
@@ -57,7 +55,7 @@
             <section>
                 <div class="flex items-center gap-2 mb-5 border-b pb-2">
                     <div class="p-1.5 bg-indigo-100 text-indigo-600 rounded-lg"><i data-lucide="brain-circuit" class="w-5 h-5"></i></div>
-                    <h3 class="text-2xl font-bold">核心优势</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">核心优势</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                     <div class="p-6 border border-slate-100 bg-slate-50 rounded-xl hover:shadow-md transition">
@@ -79,11 +77,11 @@
             <section>
                 <div class="flex items-center gap-2 mb-5 border-b pb-2">
                     <div class="p-1.5 bg-purple-100 text-purple-600 rounded-lg"><i data-lucide="film" class="w-5 h-5"></i></div>
-                    <h3 class="text-2xl font-bold">短片创作</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">短片创作</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <!-- 短片卡片 1 -->
-                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group">
+                    <!-- 短片 1 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/14MIIqjBS-ZqagWevdxW8jA?pwd=3mby" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="AP.jpg" alt="焦虑公园" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
                             <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -97,8 +95,8 @@
                             <p class="text-[14px] text-slate-600 leading-relaxed text-justify">“头脑特工队”，但是主角是一个焦虑的青年男性。</p>
                         </div>
                     </div>
-                    <!-- 短片卡片 2 -->
-                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group">
+                    <!-- 短片 2 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/10TLNyvP7bFnw08dIfY0GQA?pwd=yk4h" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="屏幕截图 2025-10-29 140632.jpg" alt="击云造雨" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
                             <div class="absolute inset-0 flex flex-col items-center justify-center"><i data-lucide="play-circle" class="w-10 h-10 text-white opacity-80"></i></div>
@@ -109,8 +107,8 @@
                             <p class="text-[14px] text-slate-600 leading-relaxed">一位中年女性经过了她生命里最跌宕起伏的23分钟。</p>
                         </div>
                     </div>
-                    <!-- 短片卡片 3 -->
-                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group">
+                    <!-- 短片 3 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/1A6K39PNe0LFA92xiZyT-dQ?pwd=jayn" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="屏幕截图 2025-07-01 184445.jpg" alt="预言家" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
                             <div class="absolute inset-0 flex flex-col items-center justify-center"><i data-lucide="play-circle" class="w-10 h-10 text-white opacity-80"></i></div>
@@ -128,7 +126,7 @@
             <section id="scripts">
                 <div class="flex items-center gap-2 mb-5 border-b pb-2">
                     <div class="p-1.5 bg-rose-100 text-rose-600 rounded-lg"><i data-lucide="pen-tool" class="w-5 h-5"></i></div>
-                    <h3 class="text-2xl font-bold">剧本创作</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">剧本创作</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <!-- 剧本 1 (主推) -->
@@ -185,7 +183,7 @@
             <section id="experience">
                 <div class="flex items-center gap-2 mb-5 border-b pb-2">
                     <div class="p-1.5 bg-blue-100 text-blue-600 rounded-lg"><i data-lucide="library" class="w-5 h-5"></i></div>
-                    <h3 class="text-2xl font-bold text-slate-800">游戏与影视阅历</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">游戏与影视阅历</h3>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 text-center">
                     <div class="bg-blue-50 border border-blue-100 p-5 rounded-xl">
@@ -216,7 +214,7 @@
                                 <div class="flex flex-wrap gap-2.5">
                                     <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200">最后生还者 1&2</span>
                                     <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200">荒野大镖客2</span>
-                                    <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200 font-black">战神：诸神黄昏（全成就）</span>
+                                    <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200 font-black text-indigo-700">战神：诸神黄昏（全成就）</span>
                                     <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200">死亡搁浅 1&2</span>
                                     <span class="px-3.5 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-md border border-slate-200">赛博朋克2077</span>
                                     <span class="px-3 py-1 bg-white text-indigo-500 text-xs font-black rounded border border-indigo-200 shadow-sm">...</span>
@@ -266,10 +264,10 @@
             <section id="translations">
                 <div class="flex items-center gap-2 mb-5 border-b pb-2">
                     <div class="p-1.5 bg-amber-100 text-amber-600 rounded-lg"><i data-lucide="languages" class="w-5 h-5"></i></div>
-                    <h3 class="text-2xl font-bold">视频翻译与搬运</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">视频翻译与搬运</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition group bg-white flex flex-col">
+                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition group bg-white flex flex-col shadow-sm">
                         <a href="https://www.bilibili.com/video/BV182NCzBERn" target="_blank" class="block relative aspect-video bg-slate-900 overflow-hidden">
                             <img src="maxresdefault.jpg" alt="Video Cover" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center"><i data-lucide="play-circle" class="w-14 h-14 text-white opacity-90 group-hover:scale-110 transition"></i></div>
@@ -279,14 +277,14 @@
                             <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">针对毒舌幽默进行深度本地化，精准还原高强度的台词节奏与社区俚语。</p>
                         </div>
                     </div>
-                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition group bg-white flex flex-col">
+                    <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition group bg-white flex flex-col shadow-sm">
                         <a href="https://www.bilibili.com/video/BV18uMXziE71" target="_blank" class="block relative aspect-video bg-slate-900 overflow-hidden">
                             <img src="ds2.jpg" alt="Video Cover" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center"><i data-lucide="play-circle" class="w-14 h-14 text-white opacity-90 group-hover:scale-110 transition"></i></div>
                         </a>
                         <div class="p-5">
                             <h4 class="font-bold text-slate-800 text-[15px] mb-2 leading-tight transition group-hover:text-amber-600">【游戏驴子】死亡搁浅2的搁浅</h4>
-                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-800 italic">侧重叙事逻辑与术语翻译，通过字幕时值排版增强解构效果。</p>
+                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">侧重叙事逻辑与术语翻译，通过字幕时值排版增强解构效果。</p>
                         </div>
                     </div>
                 </div>
