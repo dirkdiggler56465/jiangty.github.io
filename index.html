@@ -9,23 +9,23 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            /* 温暖质感的深石色磨砂背景 */
-            background-color: #524c46; 
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E");
+            /* 使用纯净平滑的暖色调渐变，彻底告别点状纹理 */
+            background: linear-gradient(135deg, #6b635d 0%, #4a443f 100%);
+            background-attachment: fixed;
         }
         .transition-all { transition: all 0.3s ease; }
         .leading-relaxed-tight { line-height: 1.6; }
-        /* 自定义滚动条，适配温暖色调 */
+        /* 优化滚动条，配合暖色调背景 */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #3d3834; }
-        ::-webkit-scrollbar-thumb { background: #6b635d; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #827871; }
+        ::-webkit-scrollbar-thumb { background: #827871; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a3968f; }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen py-6 px-4 sm:px-6 lg:px-8">
 
     <!-- 主容器 -->
-    <main class="max-w-5xl mx-auto bg-white rounded-2xl shadow-[0_40px_70px_-15px_rgba(0,0,0,0.5)] overflow-hidden">
+    <main class="max-w-5xl mx-auto bg-white rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.6)] overflow-hidden">
         
         <!-- 头部 Banner -->
         <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 sm:p-10 relative overflow-hidden">
@@ -80,7 +80,6 @@
                     <h3 class="text-2xl font-bold text-slate-900">短片创作</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <!-- 短片 1 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/14MIIqjBS-ZqagWevdxW8jA?pwd=3mby" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="AP.jpg" alt="焦虑公园" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
@@ -91,11 +90,10 @@
                         </a>
                         <div class="p-5 flex-1">
                             <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-purple-600 transition">焦虑公园（后期中）</h4>
-                            <p class="text-xs font-semibold text-purple-500 mb-2">导演 / 编剧 / 剪辑</p>
+                            <p class="text-xs font-semibold text-purple-500 mb-2 uppercase">导演 / 编剧 / 剪辑</p>
                             <p class="text-[14px] text-slate-600 leading-relaxed text-justify">“头脑特工队”，但是主角是一个焦虑的青年男性。</p>
                         </div>
                     </div>
-                    <!-- 短片 2 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/10TLNyvP7bFnw08dIfY0GQA?pwd=yk4h" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="屏幕截图 2025-10-29 140632.jpg" alt="击云造雨" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
@@ -103,11 +101,10 @@
                         </a>
                         <div class="p-5 flex-1">
                             <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-purple-600 transition">击云造雨</h4>
-                            <p class="text-xs font-semibold text-purple-500 mb-2">导演 / 编剧 / 剪辑</p>
+                            <p class="text-xs font-semibold text-purple-500 mb-2 uppercase">导演 / 编剧 / 剪辑</p>
                             <p class="text-[14px] text-slate-600 leading-relaxed">一位中年女性经过了她生命里最跌宕起伏的23分钟。</p>
                         </div>
                     </div>
-                    <!-- 短片 3 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white flex flex-col group shadow-sm">
                         <a href="https://pan.baidu.com/s/1A6K39PNe0LFA92xiZyT-dQ?pwd=jayn" target="_blank" class="relative aspect-video bg-slate-800 block">
                             <img src="屏幕截图 2025-07-01 184445.jpg" alt="预言家" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition duration-500">
@@ -115,7 +112,7 @@
                         </a>
                         <div class="p-5 flex-1">
                             <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-purple-600 transition">还有多久到现在？</h4>
-                            <p class="text-xs font-semibold text-purple-500 mb-2">导演 / 编剧 / 剪辑</p>
+                            <p class="text-xs font-semibold text-purple-500 mb-2 uppercase">导演 / 编剧 / 剪辑</p>
                             <p class="text-[14px] text-slate-600 leading-relaxed">一个男孩向一位女孩搭讪，他声称自己能够预测未来。</p>
                         </div>
                     </div>
@@ -273,8 +270,10 @@
                             <div class="absolute inset-0 flex items-center justify-center"><i data-lucide="play-circle" class="w-14 h-14 text-white opacity-90 group-hover:scale-110 transition"></i></div>
                         </a>
                         <div class="p-5">
-                            <h4 class="font-bold text-slate-800 text-[15px] mb-2 leading-tight transition group-hover:text-amber-600">【游戏驴子】马里奥赛车世界</h4>
-                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">针对毒舌幽默进行深度本地化，精准还原高强度的台词节奏与社区俚语。</p>
+                            <h4 class="font-bold text-slate-800 text-[15px] mb-2 leading-tight transition group-hover:text-amber-600">【中英双语/游戏驴子】马里奥赛车世界</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">
+                                长期跟进海外头部游戏评论，出于对其犀利解构与评测视角的认可，展现对核心玩家社区及游戏文化的深度沉浸。
+                            </p>
                         </div>
                     </div>
                     <div class="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition group bg-white flex flex-col shadow-sm">
@@ -283,8 +282,10 @@
                             <div class="absolute inset-0 flex items-center justify-center"><i data-lucide="play-circle" class="w-14 h-14 text-white opacity-90 group-hover:scale-110 transition"></i></div>
                         </a>
                         <div class="p-5">
-                            <h4 class="font-bold text-slate-800 text-[15px] mb-2 leading-tight transition group-hover:text-amber-600">【游戏驴子】死亡搁浅2的搁浅</h4>
-                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">侧重叙事逻辑与术语翻译，通过字幕时值排版增强解构效果。</p>
+                            <h4 class="font-bold text-slate-800 text-[15px] mb-2 leading-tight transition group-hover:text-amber-600">【中英双语/游戏驴子】死亡搁浅2的搁浅</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed border-t pt-3 border-slate-50 italic">
+                                绝不停留在单纯的“通关”层面，而是积极参与玩家生态圈，以更宏观、批判性的行业视角审视游戏设计的得失。
+                            </p>
                         </div>
                     </div>
                 </div>
